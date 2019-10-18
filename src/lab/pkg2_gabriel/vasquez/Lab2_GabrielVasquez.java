@@ -17,6 +17,8 @@ public class Lab2_GabrielVasquez {
         
         ArrayList lista = new ArrayList();
         
+        System.out.printf("%s\n\n", "SISTEMA DE REGISTRO DE UNIVERSIDADES");
+        
         System.out.printf("%s\n%s" ,"1 - Crear Universidad\n2 - Eliminar Universidad\n3 - Log In\n4 - Ascender Universidad\n"
                 + "5 - Listar Universidades y su Sucursal\n6 - Modificar Universidad\n7 - Descender Universidad\n8 - RANDOM",
                 "Ingrese la opción que desea: ");
