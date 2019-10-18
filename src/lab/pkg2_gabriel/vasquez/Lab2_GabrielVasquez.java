@@ -97,7 +97,7 @@ public class Lab2_GabrielVasquez {
                     String usuario = input.next();
                     System.out.print("Ingrese contraseña: ");
                     String contraseña = input.next();
-                    while(usuario != "leobanegas" && contraseña != "99"){
+                    while(usuario != "leobanegas" || contraseña != "99"){
                         System.out.println("Ha ingresado un usuario y/o contraseña incorrecto");
                         System.out.print("Ingrese su usuario: ");
                         usuario = input.next();
