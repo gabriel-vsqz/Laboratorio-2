@@ -21,15 +21,15 @@ public class Lab2_GabrielVasquez {
         
         System.out.printf("%s\n%s" ,"1 - Crear Universidad\n2 - Eliminar Universidad\n3 - Log In\n4 - Ascender Universidad\n"
                 + "5 - Listar Universidades y su Sucursal\n6 - Modificar Universidad\n7 - Descender Universidad\n8 - RANDOM",
-                "Ingrese la opción que desea: ");
+                "\nIngrese la opción que desea: ");
         int option = input.nextInt();
         
         while(option != 3){
             System.out.println("Debe seleccionar la opción 3 - Log In para poder iniciar.");
-            System.out.printf("\n%s\n%s" ,"1 - Crear Universidad\n2 - Eliminar Universidad\n3 - Log In\n4 - Ascender Universidad\n"
+            System.out.printf("\n%s\n\n%s" ,"1 - Crear Universidad\n2 - Eliminar Universidad\n3 - Log In\n4 - Ascender Universidad\n"
                 + "5 - Listar Universidades y su Sucursal\n6 - Modificar Universidad\n7 - Descender Universidad\n8 - RANDOM",
                 "Ingrese la opción que desea: ");
-        option = input.nextInt();
+            option = input.nextInt();
         }
         
         while(option != 0){
@@ -169,7 +169,7 @@ public class Lab2_GabrielVasquez {
                     }
                     else{
                         System.out.print("1- Nombre, 2- Rector, 3- Sucursal, 4- Año, 5- N. Maestros"
-                                + ", 6- N. Estudiantes, 7- Nivel\n¿Qúe desea Modificar?");
+                                + ", 6- N. Estudiantes, 7- Nivel\n\n¿Qúe desea Modificar?");
                         int mod = input.nextInt();
                         switch(mod){
                             case 1:
@@ -286,7 +286,7 @@ public class Lab2_GabrielVasquez {
             
             System.out.printf("\n%s\n%s" ,"1 - Crear Universidad\n2 - Eliminar Universidad\n3 - Log In\n4 - Acender Universidad\n"
                 + "5 - Listar Universidades y su Sucursal\n6 - Modificar Universidad\n7 - Descender Universidad\n8 - RANDOM",
-                "Ingrese la opción que desea: ");
+                "\nIngrese la opción que desea: ");
                 option = input.nextInt();
             
         }
