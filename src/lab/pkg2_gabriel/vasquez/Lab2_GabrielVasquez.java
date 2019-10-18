@@ -211,10 +211,10 @@ public class Lab2_GabrielVasquez {
                     }
                     else{
                         if( ((Universidad)lista.get(pos)).getNivel().equals("Pública") ){
-                            System.out.println("La Universidad no puede descender de su nivel: Pública");
+                            lista.remove(((Universidad)lista.get(pos)));
                         }
                         else if( ((Universidad)lista.get(pos)).getNivel().equals("Privada") ){
-                            System.out.println("La Universidad no puede descender de su nivel: Privada");
+                            lista.remove(((Universidad)lista.get(pos)));
                         }
                         else if( ((Universidad)lista.get(pos)).getNivel().equals("Pública Prestigiosa") ){
                             ((Universidad)lista.get(pos)).setNivel("Pública");
