@@ -268,7 +268,7 @@ public class Lab2_GabrielVasquez {
                         ((Universidad)lista.get(rand)).setNivel("Nacional");
                         ((Universidad)lista.get(rand)).setCosto(500);
                     }
-                    else{
+                    else if( ((Universidad)lista.get(rand)).getNivel().equals("Pública Prestigiosa") ){
                         ((Universidad)lista.get(rand)).setNivel("Nacional");
                         ((Universidad)lista.get(rand)).setCosto(500);
                     }
