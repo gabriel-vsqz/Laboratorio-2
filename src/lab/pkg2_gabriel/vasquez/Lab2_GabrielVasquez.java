@@ -163,41 +163,60 @@ public class Lab2_GabrielVasquez {
                         System.out.println("Posición Incorrecta");
                     }
                     else{
-                        System.out.print("Nombre de la Universidad: ");
-                        input.nextLine();
-                        nombre = input.nextLine();
-                        ( (Universidad)lista.get(post) ).setNombre(nombre);
+                        System.out.print("1- Nombre, 2- Rector, 3- Sucursal, 4- Año, 5- N. Maestros"
+                                + ", 6- N. Estudiantes, 7- Nivel\n¿Qúe desea Modificar?");
+                        int mod = input.nextInt();
+                        switch(mod){
+                            case 1:
+                            System.out.print("Nombre de la Universidad: ");
+                            input.nextLine();
+                            nombre = input.nextLine();
+                            ( (Universidad)lista.get(post) ).setNombre(nombre);
+                            break;
 
-                        System.out.print("Nombre del Rector: ");
-                        input.nextLine();
-                        rector = input.nextLine();
-                        ( (Universidad)lista.get(post) ).setRector(rector);
+                            case 2:
+                            System.out.print("Nombre del Rector: ");
+                            input.nextLine();
+                            rector = input.nextLine();
+                            ( (Universidad)lista.get(post) ).setRector(rector);
+                            break;
+                            
+                            case 3:
+                            System.out.print("Sucursal: ");
+                            sucursal = input.next();
+                            ( (Universidad)lista.get(post) ).setSucursal(sucursal);
+                            break;
 
-                        System.out.print("Sucursal: ");
-                        sucursal = input.next();
-                        ( (Universidad)lista.get(post) ).setSucursal(sucursal);
+                            case 4:
+                            System.out.print("Año de Creación: ");
+                            año = input.nextInt();
+                            ( (Universidad)lista.get(post) ).setAño(año);
+                            break;
 
-                        System.out.print("Año de Creación: ");
-                        año = input.nextInt();
-                        ( (Universidad)lista.get(post) ).setAño(año);
+                            case 5:
+                            System.out.print("Cantidad de Maestros: ");
+                            maestros = input.nextInt();
+                            ( (Universidad)lista.get(post) ).setMaestros(maestros);
+                            break;
 
-                        System.out.print("Cantidad de Maestros: ");
-                        maestros = input.nextInt();
-                        ( (Universidad)lista.get(post) ).setMaestros(maestros);
+                            case 6:
+                            System.out.print("Cantidad de Estudiantes: ");
+                            estudiantes = input.nextInt();
+                            ( (Universidad)lista.get(post) ).setEstudiantes(estudiantes);
+                            break;
 
-                        System.out.print("Cantidad de Estudiantes: ");
-                        estudiantes = input.nextInt();
-                        ( (Universidad)lista.get(post) ).setEstudiantes(estudiantes);
-
-                        System.out.print("Nivel [1 - Privada | 2 - Pública]: ");
-                        niv = input.nextInt();
-                        if(niv == 1){
-                            nivel = "Privada";
+                            case 7:
+                            System.out.print("Nivel [1 - Privada | 2 - Pública]: ");
+                            niv = input.nextInt();
+                            if(niv == 1){
+                                nivel = "Privada";
+                            }
+                            else{
+                                nivel = "Pública";
+                            }
+                            ( (Universidad)lista.get(post) ).setNivel(nivel);
+                            break;
                         }
-                        else{
-                            nivel = "Pública";
-                        }
-                        ( (Universidad)lista.get(post) ).setNivel(nivel);
                     }
                     break;
 
