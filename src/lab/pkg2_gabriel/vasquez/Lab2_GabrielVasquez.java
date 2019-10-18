@@ -44,7 +44,7 @@ public class Lab2_GabrielVasquez {
 
                     String rector;
                     System.out.print("Nombre del Rector: ");
-                    input.nextLine();
+                    input.next();
                     rector = input.nextLine();
 
                     System.out.print("Sucursal: ");
@@ -149,7 +149,7 @@ public class Lab2_GabrielVasquez {
                     
                     String salida = "";
                     for (Object t : lista) {
-                            salida += lista.indexOf(t)+1 + " - " + t + "\n";
+                            salida += lista.indexOf(t) + " - " + t + "\n";
                     }
                     System.out.println(salida);
                     break;
